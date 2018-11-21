@@ -286,9 +286,9 @@ div.col-md-3.info.addform{
 /*}*/
 
 
-@media (max-width: 1360px) {
+@media (max-width: 1366px) {
  .container.gallery-page{
-	 width: 1100px;
+	 max-width: 1100px;
  }
 	.container{
 		padding-left: 55px;
