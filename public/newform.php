@@ -5,7 +5,7 @@
     }
     ?>
     <main>
-        <div class="container">
+        <div class="container admin">
             <div class="row fotospreview">
                 <div class="col-md-3 addform">
 
