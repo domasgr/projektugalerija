@@ -110,7 +110,7 @@ $res = mysqli_query($db, $sql);
                 <?php while($row = mysqli_fetch_assoc($res)): ?>
 				<div class="col-xl-3 col-lg-4 col-sm-6">
 
-                        <div class="card rounded-circle" style="background-image: url(../uploads/<?php echo $row['image1']?>); background-size: cover; background-position: center center;">
+                        <div class="card rounded-circle" style="background-image: url(../uploads/<?php echo $row['image2']?>); background-size: cover; background-position: center center;">
     <!--						<img class="card-img-top" src="uploads/--><?php //echo $row['image1']?><!--">-->
 
                             <div class="card-body">
