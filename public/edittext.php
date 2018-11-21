@@ -15,7 +15,7 @@ $project_id = $_GET['id'];
 
 
 <main>
-    <div class="container">
+    <div class="container edit-page">
         <div class="row fotospreview">
             <div class="col-md-3 addform">
 

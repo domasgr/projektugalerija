@@ -260,7 +260,7 @@ div.dropdown{
 
 /* ****************************ADD NEW**************************************/
 .addform{
-	margin-top: 20px;
+	margin-top: 0px;
 }
 /*.fotospreview{*/
 	/*height: 250px;*/
@@ -719,4 +719,8 @@ div.col{
 /*}*/
 .container.project-page{
 	padding-top: 10px;
+}
+
+.container.admin{
+	margin-top: 10px;
 }
