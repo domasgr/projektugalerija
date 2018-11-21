@@ -659,6 +659,10 @@ div.col{
 	width: 200px;
 
 }
+.form-control{
+	margin-top: 10px;
+}
+
 .numeration{
 	display: inline-block;
 	width: 19px;
