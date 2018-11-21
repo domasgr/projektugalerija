@@ -182,15 +182,16 @@ $row = mysqli_fetch_assoc($res);
                         echo '</div>';
                         echo '</div>';
                     }?>
-                    <div class="side-info my-auto d-block">
-                        <ul class="list-group mt-5">
-                            <li class="list-group-item"><i class="far fa-calendar mr-2"></i> <span class="text-light"> <?php echo $row['projectDate']?></span></li>
-                            <li class="list-group-item"><i class="far fa-clock mr-2"></i><span class="text-light"><?php echo $row['timespent']?></span></li>
-                            <li class="list-group-item"><i class="fas fa-hammer mr-2"></i><span class="text-light"><?php echo $row['projectType']?></span></li>
-                            <!--                            <li class="list-group-item"><strong>Porta ac </strong> <span class="text-light bg-secondary">consectetur ac</span></li>-->
-                            <!--                            <li class="list-group-item"><strong>Vestibulum </strong> <span class="text-light bg-secondary">at eros</span></li>-->
-                        </ul>
-                    </div>
+                     <?php if(isset($_SESSION['id'])) {
+                        echo '<div class="side-info my-auto d-block">';
+                        echo '<ul class="list-group mt-5">';
+                        echo '<li class="list-group-item"><i class="far fa-calendar mr-2"></i> <span class="text-light">' . $row["projectDate"] . '</span></li>';
+                        echo '<li class="list-group-item"><i class="far fa-clock mr-2"></i><span class="text-light">' . $row["timespent"] . '</span></li>';
+                        echo '<li class="list-group-item"><i class="fas fa-hammer mr-2"></i><span class="text-light">' . $row["projectType"] . '</span></li>';
+
+                        echo '</ul>';
+                        echo '</div>';
+                    }?>
                 </div>
 
             </div>
