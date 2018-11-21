@@ -6,7 +6,7 @@ if (isset($_POST['submitLogin'])) {
     $password = $_POST['password'];
 
     if (empty($username) || empty($password)) {
-        header('Location: /public/login.php?error=emptyfields');   // Error handler EMPTY FIELD
+        header('Location: /public/index.php');   // Error handler EMPTY FIELD
         exit();
     } else {
         $sql = "SELECT * FROM admin WHERE id=1;";
