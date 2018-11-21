@@ -1,4 +1,3 @@
-<?php include "../partials/header.php" ?>
 <?php
 if (isset($_POST['submitLogin'])) {
     include "../mysql_connect.php";
@@ -29,6 +28,8 @@ if (isset($_POST['submitLogin'])) {
     }
 }
 ?>
+<?php include "../partials/header.php" ?>
+
 <main>
     <div class="container login">
         <div class="row">
