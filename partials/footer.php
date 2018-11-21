@@ -22,17 +22,27 @@
     var captionText = document.getElementById("caption");
     img[0].onclick = function(){
         modal.style.display = "block";
-        modalImg.src = 'uploads/<?php echo $row['image1']?>';
+        modalImg.src = '../uploads/<?php echo $row['image1']?>';
         captionText.innerHTML = this.alt;
     }
     img[1].onclick = function(){
         modal.style.display = "block";
-        modalImg.src = 'uploads/<?php echo $row['image2']?>';
+        modalImg.src = '../uploads/<?php echo $row['image2']?>';
         captionText.innerHTML = this.alt;
     }
     img[2].onclick = function(){
         modal.style.display = "block";
-        modalImg.src = 'uploads/<?php echo $row['image3']?>';
+        modalImg.src = '../uploads/<?php echo $row['image3']?>';
+        captionText.innerHTML = this.alt;
+    }
+    img[3].onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = '../uploads/<?php echo $row['image4']?>';
+        captionText.innerHTML = this.alt;
+    }
+    img[4].onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = '../uploads/<?php echo $row['image5']?>';
         captionText.innerHTML = this.alt;
     }
 
