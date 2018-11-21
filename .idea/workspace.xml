@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="beb863ea-8c0d-4c91-8c4c-82b57038a992" name="Default Changelist" comment="" />
+    <list default="true" id="beb863ea-8c0d-4c91-8c4c-82b57038a992" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/public/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/login.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +44,14 @@
           <entry key="Procfile" value="23" />
           <entry key="ini" value="17" />
           <entry key="json" value="3" />
-          <entry key="php" value="202" />
+          <entry key="php" value="203" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Ini" value="17" />
           <entry key="JSON" value="3" />
-          <entry key="PHP" value="202" />
+          <entry key="PHP" value="203" />
           <entry key="PLAIN_TEXT" value="23" />
         </counts>
       </usages-collector>
@@ -70,16 +72,16 @@
         <entry file="file://$PROJECT_DIR$/custom-php.ini">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+            <state relative-caret-position="575">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -88,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/public/logout.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -102,7 +104,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -158,7 +160,6 @@
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/partials/header.php" />
         <option value="$PROJECT_DIR$/public/logout.php" />
-        <option value="$PROJECT_DIR$/public/login.php" />
         <option value="$PROJECT_DIR$/public/project.php" />
         <option value="$PROJECT_DIR$/public/edittext.php" />
         <option value="$PROJECT_DIR$/public/newform.php" />
@@ -167,6 +168,7 @@
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/custom-php.ini" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/public/login.php" />
       </list>
     </option>
   </component>
@@ -197,6 +199,11 @@
             <path>
               <item name="projektugalerija" type="b2602c69:ProjectViewProjectNode" />
               <item name="projektugalerija" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projektugalerija" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projektugalerija" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projektugalerija" type="b2602c69:ProjectViewProjectNode" />
@@ -244,15 +251,15 @@
       <option name="presentableId" value="Default" />
       <updated>1542710305115</updated>
       <workItem from="1542710306375" duration="6092000" />
-      <workItem from="1542791771877" duration="2911000" />
+      <workItem from="1542791771877" duration="3100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9003000" />
+    <option name="totallyTimeSpent" value="9192000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14183381" />
@@ -293,7 +300,7 @@
     <entry file="file://$PROJECT_DIR$/public/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -325,13 +332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysql_connect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -349,7 +349,7 @@
     <entry file="file://$PROJECT_DIR$/custom-php.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -357,6 +357,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="52" selection-start-column="52" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
