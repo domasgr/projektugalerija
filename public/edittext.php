@@ -88,7 +88,7 @@ $project_id = $_GET['id'];
                 </div>
                 <div class="col-md-9">
                     <input type="text" name="title" class="form-control" id="newtitle" value="<?php echo $row['title'] ?>" required>
-                    <textarea name="text" class="form-control mt-2" id="newtext" rows="14" placeholder="Text" required><?php echo $row['text'] ?></textarea>
+                    <textarea name="text" class="form-control mt-5" id="newtext" rows="14" placeholder="Text" required><?php echo $row['text'] ?></textarea>
                 </div>
             </div>
         </form>
