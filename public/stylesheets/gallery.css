@@ -659,6 +659,9 @@ div.row.preview:hover{
 	.modal-content {
 		width: 100%;
 	}
+	div.row.mobile-triangle{
+		background: #6b4e2a;
+	}
 }
 /*******************************************************************/
 

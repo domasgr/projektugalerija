@@ -199,7 +199,7 @@ $row = mysqli_fetch_assoc($res);
 
 
                 <div class="col-lg-9 order-lg-2">
-                    <div class="row">
+                    <div class="row mobile-triangle">
                         <div class="col-12">
                             <div class="triangle-display">
                                 <div class="triangleL" style="background-image: url(../uploads/<?php echo $row['image1']?>); background-size: cover; /*background-position: center center;*/"></div>
