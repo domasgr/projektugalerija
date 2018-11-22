@@ -286,40 +286,60 @@ div.col-md-3.info.addform{
 /*}*/
 
 
-@media (max-width: 1366px) {
- .container.gallery-page{
-	 max-width: 1100px;
+@media (max-width: 1378px) {
+ .container.project-page{
+	 max-width: 1000px;
  }
+	.triangle-display div.triangleR {
+		margin-left: -689px;}
 	/*.container{*/
 		/*padding-left: 55px;*/
 	/*}*/
 }
-@media (max-width: 1280px){
-	.container.gallery-page{
-	width: 1000px;}
-	.card{
-		/*width: 225px;*/
-		/*height: 225px;*/
-		margin: 10px auto;
-	}
+@media (max-width: 1250px){
 	.container.project-page{
-		width: 1000px;
+		max-width: 850px;
 	}
-	.triangle-display div.triangleL{
-		width: 550px;
-	}
-	.triangle-display div.triangleR{
-		margin-left: -531px;
-		width: 550px;
-	}
-	div .triangle-display{
-		margin-left: 73px;
+	.triangle-display div.triangleR {
+		margin-left: -580px;
 	}
 }
-@media (max-width: 1135px){
-	.container.gallery-page{
-		width: 800px;
+/*@media (max-width: 1200px){*/
+	/*.container.gallery-page{*/
+	/*width: 1000px;}*/
+	/*!*.card{*!*/
+		/*!*!*width: 225px;*!*!*/
+		/*!*!*height: 225px;*!*!*/
+		/*!*margin: 10px auto;*!*/
+	/*!*}*!*/
+	/*.container.project-page{*/
+		/*width: 1000px;*/
+	/*}*/
+	/*!*.triangle-display div.triangleL{*!*/
+		/*!*width: 550px;*!*/
+	/*!*}*!*/
+	/*.triangle-display div.triangleR{*/
+		/*margin-left: -691px;*/
+		/*!*width: 550px;*!*/
+	/*}*/
+	/*!*div .triangle-display{*!*/
+		/*!*margin-left: 73px;*!*/
+	/*!*}*!*/
+/*}*/
+@media (max-width: 1095px) {
+	.container.project-page {
+		max-width: 760px;
 	}
+
+	.triangle-display div.triangleR {
+		margin-left: -518px;
+	}
+
+	/*@media (max-width: 1135px){*/
+	/*.container.gallery-page{*/
+	/*width: 800px;*/
+	/*}*/
+	/*}*/
 }
 @media (min-width: 1024px) {
 	div.backToHome {
@@ -402,12 +422,15 @@ div.col-md-3.info.addform{
 	.container.project-page{
 		width: auto;
 	}
+	.triangle-display div.triangleR {
+		margin-left: -697px;
+	}
 }
 
 @media (max-width: 760px) {
-	.triangle-display div.triangleL {
-		width: 400px;
-	}
+	/*.triangle-display div.triangleL {*/
+		/*width: 400px;*/
+	/*}*/
 
 	.triangle-display div.triangleL {
 		height: 300px;
@@ -418,17 +441,19 @@ div.col-md-3.info.addform{
 
 	.triangle-display div.triangleR {
 		margin-left: -392px;
-		width: 400px;
-	}
 
-	div .triangle-display {
-		margin-left: 49px;
 	}
+	.triangle-display div.triangleR {
+		margin-left: -95%;
+	}
+	/*div .triangle-display {*/
+		/*margin-left: 49px;*/
+	/*}*/
 }
 @media (max-width: 500px) {
-	.triangle-display div.triangleL {
-		width: 280px;
-	}
+	/*.triangle-display div.triangleL {*/
+		/*width: 280px;*/
+	/*}*/
 
 	.triangle-display div.triangleL {
 		height: 220px;
@@ -438,17 +463,17 @@ div.col-md-3.info.addform{
 	}
 
 	.triangle-display div.triangleR {
-		margin-left: -274px;
-		width: 280px;
+		margin-left: -96%;
+		/*width: 280px;*/
 	}
 
-	div .triangle-display {
-		margin-left: 0px;
-	}
+	/*div .triangle-display {*/
+		/*margin-left: 0px;*/
+	/*}*/
 }
 div.triangleL{
 	display: inline-block;
-	width: 770px;
+	width: 97%;
 	height: 400px;
 	margin-bottom: -5px;
 	background: #f5f5f5;
@@ -465,8 +490,8 @@ div.triangleL{
 }
 div.triangleR{
 	display: inline-block;
-	margin-left: -755px;
-	width: 770px;
+	margin-left: -785px;
+	width: 97%;
 	height: 400px;
 	background: #f5f5f5;
 	background-position: right bottom;
@@ -533,7 +558,7 @@ div.triangleRN{
 	display: inline-block;
 	position: relative;
 	margin: 0 auto;
-
+	width: 100%;
 	-webkit-box-shadow: -13px 12px 18px -10px rgba(0,0,0,0.75);
 	-moz-box-shadow: -13px 12px 18px -10px rgba(0,0,0,0.75);
 	box-shadow: -13px 12px 18px -10px rgba(0,0,0,0.75);
@@ -731,3 +756,6 @@ div.col{
 .container.admin{
 	margin-top: 10px;
 }
+/*div.row{*/
+	/*width: 100%;*/
+/*}*/

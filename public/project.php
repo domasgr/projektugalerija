@@ -199,7 +199,7 @@ $row = mysqli_fetch_assoc($res);
 
 
                 <div class="col-lg-9 order-lg-2">
-                    <div class="row wrapper">
+                    <div class="row">
                         <div class="col-12">
                             <div class="triangle-display">
                                 <div class="triangleL" style="background-image: url(../uploads/<?php echo $row['image1']?>); background-size: cover; /*background-position: center center;*/"></div>
@@ -208,6 +208,7 @@ $row = mysqli_fetch_assoc($res);
                         </div>
                     </div>
 
+
                     <div class="row">
                         <div class="col-12">
                             <h3 class="image-title"><?php echo $row['title'] ?></h3>
@@ -215,10 +216,12 @@ $row = mysqli_fetch_assoc($res);
                             <p class="project-text"><?php echo $row['text'] ?> </p>
                         </div>
                     </div>
+
+
+
                 </div>
-
-
-</div>
+                </div>
+            </div>
     </main>
 
 
