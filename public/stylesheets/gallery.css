@@ -449,6 +449,10 @@ div.col-md-3.info.addform{
 	/*div .triangle-display {*/
 		/*margin-left: 49px;*/
 	/*}*/
+	body {
+		background: #292731;
+		color: #c1c1c1;
+	}
 }
 @media (max-width: 500px) {
 	/*.triangle-display div.triangleL {*/
