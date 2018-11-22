@@ -130,8 +130,8 @@ $row = mysqli_fetch_assoc($res);
 
 
         <div class="container project-page">
-            <div class="row wrapper">
 
+            <div class="row wrapper">
 
 
                 <div class="col-lg-3 order-1 order-lg-1">
@@ -199,7 +199,7 @@ $row = mysqli_fetch_assoc($res);
 
 
                 <div class="col-lg-9 order-lg-2">
-                    <div class="row">
+                    <div class="row wrapper">
                         <div class="col-12">
                             <div class="triangle-display">
                                 <div class="triangleL" style="background-image: url(../uploads/<?php echo $row['image1']?>); background-size: cover; /*background-position: center center;*/"></div>

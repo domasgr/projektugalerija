@@ -641,12 +641,12 @@ div.col{
 /******* PROJECT PAGE MUST HAVE****/
 .container{
 	height: 100%;
-	overflow: auto;
+	/*overflow: auto;*/
 }
 .row.wrapper{
 	height: 100%;
 }
-.col-9{
+.col-lg-9{
 	overflow: auto;
 }
 
