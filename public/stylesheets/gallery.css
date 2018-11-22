@@ -92,7 +92,7 @@ p.card-text{
 	width: 250px;
 	height: 250px;
 	border: none;
-	margin-top: 20px;
+	margin: 20px auto;
 }
 .card .hyperlink h2{
 	color: white;
