@@ -137,19 +137,19 @@ $row = mysqli_fetch_assoc($res);
                 <div class="col-lg-3 order-1 order-lg-1">
                     <div class="row">
                         <div class="col-12 info">
-                                <div class="row preview">
+                                <div class="row preview mb-1">
                                     <div class="col" id="img" style="background-image: url(../uploads/<?php echo $row['image1']?>); background-size: cover; background-position: center center;">
                                     </div>
                                 </div>
-                                <div class="row preview">
+                                <div class="row preview mb-1">
                                     <div class="col" style="background-image: url(../uploads/<?php echo $row['image2']?>); background-size: cover; background-position: center center;">
                                     </div>
                                 </div>
-                                <div class="row preview">
+                                <div class="row preview mb-1">
                                     <div class="col"  style="background-image: url(../uploads/<?php echo $row['image3']?>); background-size: cover; background-position: center center;">
                                     </div>
                                 </div>
-                                <div class="row preview">
+                                <div class="row preview mb-1">
                                     <div class="col"  style="background-image: url(../uploads/<?php echo $row['image4']?>); background-size: cover; background-position: center center;">
                                     </div>
                                 </div>
