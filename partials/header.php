@@ -26,6 +26,7 @@ session_start()
         <ul class="navbar-nav">
             <li class="nav-item"><a href="#" class="nav-link scroll" data-toggle="tooltip" data-placement="bottom" title="Jau greitai !">Pagrindinis</a></li>
             <li class="nav-item"><a href="/public/" class="nav-link scroll">Galerija</a></li>
+            <li class="nav-item"><a href="/public/sendmailform.php" class="nav-link scroll">Susisiekite</a></li>
         </ul>
         <ul class="navbar-nav">
             <?php if(isset($_SESSION['id'])){
