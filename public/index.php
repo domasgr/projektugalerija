@@ -113,7 +113,7 @@ $res = mysqli_query($db, $sql);
                         <div class="card rounded-circle" style="background-image: url(../uploads/<?php echo $row['image2']?>); background-size: cover; background-position: center center;">
     <!--						<img class="card-img-top" src="uploads/--><?php //echo $row['image1']?><!--">-->
 
-                            <div class="card-body">
+                            <div onclick="" class="card-body">
                                 <div class="hyperlink">
                                     <h2 class=""><i class="material-icons md-36">
                                             keyboard_arrow_up
