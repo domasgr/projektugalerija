@@ -342,209 +342,7 @@ div.col-md-3.info.addform{
 /*}*/
 
 
-@media (max-width: 1378px) {
- .container.project-page{
-	 max-width: 1000px;
- }
-	.triangle-display div.triangleR {
-		margin-left: -689px;}
-	/*.container{*/
-		/*padding-left: 55px;*/
-	/*}*/
-}
-@media (max-width: 1250px){
-	.container.project-page{
-		max-width: 850px;
-	}
-	.triangle-display div.triangleR {
-		margin-left: -580px;
-	}
-}
-/*@media (max-width: 1200px){*/
-	/*.container.gallery-page{*/
-	/*width: 1000px;}*/
-	/*!*.card{*!*/
-		/*!*!*width: 225px;*!*!*/
-		/*!*!*height: 225px;*!*!*/
-		/*!*margin: 10px auto;*!*/
-	/*!*}*!*/
-	/*.container.project-page{*/
-		/*width: 1000px;*/
-	/*}*/
-	/*!*.triangle-display div.triangleL{*!*/
-		/*!*width: 550px;*!*/
-	/*!*}*!*/
-	/*.triangle-display div.triangleR{*/
-		/*margin-left: -691px;*/
-		/*!*width: 550px;*!*/
-	/*}*/
-	/*!*div .triangle-display{*!*/
-		/*!*margin-left: 73px;*!*/
-	/*!*}*!*/
-/*}*/
-@media (max-width: 1095px) {
-	.container.project-page {
-		max-width: 760px;
-	}
 
-	.triangle-display div.triangleR {
-		margin-left: -518px;
-	}
-
-	/*@media (max-width: 1135px){*/
-	/*.container.gallery-page{*/
-	/*width: 800px;*/
-	/*}*/
-	/*}*/
-}
-@media (min-width: 1024px) {
-	div.backToHome {
-		width: 120px;
-		height: 100vh;
-		background: url(../../images/header.jpg);
-
-		background-size: cover ;
-		background-position: 25% center;
-		opacity: .8;
-		position: absolute;
-		top: 0;
-		transition: background-position 15s;
-		-webkit-transition: background-position 15s;
-
-	}
-
-	.material-icons.md-48 {
-		font-size: 48px;
-		background: #000000ad;
-		color: rgba(245, 245, 245, 0.31);
-		border-radius: 200px 200px 200px 200px;
-		-moz-border-radius: 200px 200px 200px 200px;
-		-webkit-border-radius: 200px 200px 200px 200px;
-		border: 0px solid #000000;
-		width: 65px;
-	}
-	div.backToHome:active{
-		background-position: 0% center;
-	}
-	div.backToHome:hover {
-		opacity: 1;
-		background-position: 50% center;
-	}
-	div.backToGallery {
-		width: 120px;
-		height: 100vh;
-		background-image: url(../../images/gallerypattern.jpg);
-		background-color: #e2c6a3;
-		background-blend-mode: multiply;
-		background-size: cover ;
-		filter:blur(2px);
-		background-position: 100% center;
-		opacity: .8;
-		/*filter:sepia(100%);*/
-		position: absolute;
-		top: 0;
-		transition: background-position 15s;
-		-webkit-transition: background-position 15s;
-		animation: scrollRight 15s linear;
-
-	}
-	div.backToGallery:hover{
-		opacity: 1;
-		filter:blur(0px);
-		/*filter:sepia(0%);*/
-	}
-	@keyframes scrollRight {
-		0%{background-position: 10% center;}
-		100%{ background-position: 100% center;}
-	}
-	div.homelink{
-		display: block;
-		margin-top: 570px;
-		color: black;
-		text-align: center;
-
-		opacity: 1;
-		font-size: 100px;
-
-	}
-	/*.container.gallery-page{*/
-	/*width: 800px;*/
-	/*}*/
-
-}
-@media (max-width: 992px){
-	.container.gallery-page{
-		width: auto;
-	}
-	.container.project-page{
-		width: auto;
-	}
-	.triangle-display div.triangleR {
-		margin-left: -697px;
-	}
-}
-
-@media (max-width: 760px) {
-	/*.triangle-display div.triangleL {*/
-		/*width: 400px;*/
-	/*}*/
-
-	.triangle-display div.triangleL {
-		height: 300px;
-	}
-	.triangle-display div.triangleR {
-		height: 300px;
-	}
-
-	.triangle-display div.triangleR {
-		margin-left: -392px;
-
-	}
-	.triangle-display div.triangleR {
-		margin-left: -95%;
-	}
-	/*div .triangle-display {*/
-		/*margin-left: 49px;*/
-	/*}*/
-	body {
-		background: #292731;
-		color: #c1c1c1;
-	}
-}
-@media (max-width: 500px) {
-	/*.triangle-display div.triangleL {*/
-		/*width: 280px;*/
-	/*}*/
-
-	.triangle-display div.triangleL {
-		height: 220px;
-	}
-	.triangle-display div.triangleR {
-		height: 220px;
-	}
-
-	.triangle-display div.triangleR {
-		margin-left: -96%;
-		/*width: 280px;*/
-	}
-	.card{
-		animation-name: moveInLeft;
-		animation-duration: 1s;
-		animation-delay: 1s;
-		animation-timing-function: ease-out;
-		animation-fill-mode: backwards;
-	}
-	@keyframes moveInLeft{
-		0%{ opacity: 0;
-			transform: translateX(-100px);}
-		80%{transform: translateX(10px);}
-		100%{opacity: 1;
-				transform: translate(0);}
-	}
-	/*div .triangle-display {*/
-		/*margin-left: 0px;*/
-	/*}*/
-}
 div.triangleL{
 	display: inline-block;
 	width: 97%;
@@ -837,3 +635,257 @@ div.col{
 /*div.row{*/
 	/*width: 100%;*/
 /*}*/
+@media (max-width: 1378px) {
+	.container.project-page{
+		max-width: 1000px;
+	}
+	.triangle-display div.triangleR {
+		margin-left: -689px;}
+	/*.container{*/
+	/*padding-left: 55px;*/
+	/*}*/
+}
+@media (max-width: 1250px){
+	.container.project-page{
+		max-width: 850px;
+	}
+	.triangle-display div.triangleR {
+		margin-left: -580px;
+	}
+}
+/*@media (max-width: 1200px){*/
+/*.container.gallery-page{*/
+/*width: 1000px;}*/
+/*!*.card{*!*/
+/*!*!*width: 225px;*!*!*/
+/*!*!*height: 225px;*!*!*/
+/*!*margin: 10px auto;*!*/
+/*!*}*!*/
+/*.container.project-page{*/
+/*width: 1000px;*/
+/*}*/
+/*!*.triangle-display div.triangleL{*!*/
+/*!*width: 550px;*!*/
+/*!*}*!*/
+/*.triangle-display div.triangleR{*/
+/*margin-left: -691px;*/
+/*!*width: 550px;*!*/
+/*}*/
+/*!*div .triangle-display{*!*/
+/*!*margin-left: 73px;*!*/
+/*!*}*!*/
+/*}*/
+@media (max-width: 1095px) {
+	.container.project-page {
+		max-width: 760px;
+	}
+
+	.triangle-display div.triangleR {
+		margin-left: -518px;
+	}
+
+	/*@media (max-width: 1135px){*/
+	/*.container.gallery-page{*/
+	/*width: 800px;*/
+	/*}*/
+	/*}*/
+}
+@media (min-width: 1024px) {
+	div.backToHome {
+		width: 120px;
+		height: 100vh;
+		background: url(../../images/header.jpg);
+
+		background-size: cover ;
+		background-position: 25% center;
+		opacity: .8;
+		position: absolute;
+		top: 0;
+		transition: background-position 15s;
+		-webkit-transition: background-position 15s;
+
+	}
+
+	.material-icons.md-48 {
+		font-size: 48px;
+		background: #000000ad;
+		color: rgba(245, 245, 245, 0.31);
+		border-radius: 200px 200px 200px 200px;
+		-moz-border-radius: 200px 200px 200px 200px;
+		-webkit-border-radius: 200px 200px 200px 200px;
+		border: 0px solid #000000;
+		width: 65px;
+	}
+	div.backToHome:active{
+		background-position: 0% center;
+	}
+	div.backToHome:hover {
+		opacity: 1;
+		background-position: 50% center;
+	}
+	div.backToGallery {
+		width: 120px;
+		height: 100vh;
+		background-image: url(../../images/gallerypattern.jpg);
+		background-color: #e2c6a3;
+		background-blend-mode: multiply;
+		background-size: cover ;
+		filter:blur(2px);
+		background-position: 100% center;
+		opacity: .8;
+		/*filter:sepia(100%);*/
+		position: absolute;
+		top: 0;
+		transition: background-position 15s;
+		-webkit-transition: background-position 15s;
+		animation: scrollRight 15s linear;
+
+	}
+	div.backToGallery:hover{
+		opacity: 1;
+		filter:blur(0px);
+		/*filter:sepia(0%);*/
+	}
+	@keyframes scrollRight {
+		0%{background-position: 10% center;}
+		100%{ background-position: 100% center;}
+	}
+	div.homelink{
+		display: block;
+		margin-top: 570px;
+		color: black;
+		text-align: center;
+
+		opacity: 1;
+		font-size: 100px;
+
+	}
+	/*.container.gallery-page{*/
+	/*width: 800px;*/
+	/*}*/
+
+}
+@media (max-width: 992px){
+	.container.gallery-page{
+		width: auto;
+	}
+	.container.project-page{
+		width: auto;
+	}
+	.triangle-display div.triangleR {
+		margin-left: -697px;
+	}
+}
+
+@media (max-width: 760px) {
+	/*.triangle-display div.triangleL {*/
+	/*width: 400px;*/
+	/*}*/
+
+	.triangle-display div.triangleL {
+		height: 300px;
+	}
+	.triangle-display div.triangleR {
+		height: 300px;
+	}
+
+	.triangle-display div.triangleR {
+		margin-left: -392px;
+
+	}
+	.triangle-display div.triangleR {
+		margin-left: -95%;
+	}
+	/*div .triangle-display {*/
+	/*margin-left: 49px;*/
+	/*}*/
+	body {
+		background: #292731;
+		color: #c1c1c1;
+	}
+}
+@media (max-width: 500px) {
+	/*.triangle-display div.triangleL {*/
+	/*width: 280px;*/
+	/*}*/
+	.triangle-display{
+		box-shadow: none;
+	}
+	.triangle-display div.triangleL {
+		height: 220px;
+	}
+	.triangle-display div.triangleR {
+		height: 220px;
+	}
+
+	.triangle-display div.triangleR {
+		margin-left: -96%;
+		/*width: 280px;*/
+	}
+	div.row.mobile-triangle {
+		animation-name: scaleUp;
+		animation-delay: .3s;
+		animation-duration: 300ms;
+		animation-timing-function: ease-in;
+		animation-fill-mode: backwards;
+	}
+	@keyframes scaleUp{
+		0%{
+			transform: scaleY(.4);
+		}
+		100%{
+			transform: scale(1);
+		}
+	}
+	.card{
+		animation-name: moveInLeft;
+		animation-duration: .5s;
+		animation-delay: .3s;
+		animation-timing-function: ease-out;
+		animation-fill-mode: backwards;
+	}
+	@keyframes moveInLeft{
+		0%{ opacity: 0;
+			transform: translateX(-100px);}
+		80%{transform: translateX(10px);}
+		100%{opacity: 1;
+			transform: translate(0);}
+	}
+	.triangle-display div.triangleL{
+		animation-name: triangleMoveRight;
+		animation-delay: 1s;
+		animation-duration: .5s;
+		animation-timing-function: ease-out;
+		animation-fill-mode: backwards;
+	}
+	.triangle-display div.triangleR{
+		animation-name: triangleMoveLeft;
+		animation-delay: 1s;
+		animation-duration: .5s;
+		animation-timing-function: ease-out;
+		animation-fill-mode: backwards;
+	}
+	@keyframes triangleMoveRight{
+		0%{
+			opacity: 0;
+			transform: translateX(-120px);
+		}
+		100%{
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+	@keyframes triangleMoveLeft{
+		0%{
+			opacity: 0;
+			transform: translateX(120px);
+		}
+		100%{
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+	/*div .triangle-display {*/
+	/*margin-left: 0px;*/
+	/*}*/
+}
