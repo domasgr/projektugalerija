@@ -119,7 +119,7 @@ $res = mysqli_query($db, $sql);
                                             keyboard_arrow_up
                                         </i></h2>
                                     <div class="extra-info">
-                                        <a href="/public/project.php?id=<?php echo $row['id']?>" class="btn btn-primary">Daugiau</a>
+                                        <a href="/public/project.php?id=<?php echo $row['id']?>" class="btn btn-primary card-button">Daugiau</a>
                                         <h5 class="card-title"><?php echo $row['title']?></h5>
                                         <p class="card-text text-truncate"><?php echo $row['text']?></p>
                                     </div>

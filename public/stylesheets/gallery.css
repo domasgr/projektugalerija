@@ -58,7 +58,7 @@ nav{
 
 
 
-/***************************************************************/
+/****************************    CARD    ***********************************/
 
 p.card-text{
 	height: 1.5rem;
@@ -94,6 +94,7 @@ p.card-text{
 	border: none;
 	margin: 20px auto;
 }
+
 .card .hyperlink h2{
 	color: white;
 	font-weight: 100;
@@ -151,14 +152,68 @@ div.card-body{
 	animation: 0;
 }
 .btn-primary {
+	position: relative;
 	color: #fff;
 	background-color: #6b4e2a;
+	border-radius: 42px;
 	border-color: #6b4e2a;
+	outline: 0;
+
+
+
+	transition: all .2s;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
 	background-color: #efe7dd;
 	border-color: #634028;
 	color: #634028;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+	 color: #634028;
+	 background-color: #efe7dd;
+	 border: none;
+}
+
+
+/*.btn-primary.card-button{*/
+	/*position: relative;*/
+	/**/
+	/*border-radius: 42px 42px 42px 42px;*/
+	/*-moz-border-radius: 42px 42px 42px 42px;*/
+	/*-webkit-border-radius: 42px 42px 42px 42px;*/
+	/*border: 0px solid #000000;*/
+
+	/*transition: all .2s;*/
+/*}*/
+.btn-primary:hover{
+	transform: translateY(-3px);
+	box-shadow: 0 10px 30px rgba(0,0,0,.5);
+}
+.btn-primary:active{
+	/*transform: translateY(-1px);*/
+	outline: 0;
+	box-shadow: 0 10px 15px rgba(0,0,0,.5);
+}
+
+.btn-primary::after{
+	content: "";
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	border-radius: 42px 42px 42px 42px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #6b4e2a;
+	z-index: -1;
+	transition: all .6s;
+	/*top: 10px;*/
+	/*left: 0;*/
+
+}
+.btn-primary:hover::after{
+	transform: scale(2);
+	opacity: 0;
 }
 /**********************************************************************************/
 
@@ -472,7 +527,20 @@ div.col-md-3.info.addform{
 		margin-left: -96%;
 		/*width: 280px;*/
 	}
-
+	.card{
+		animation-name: moveInLeft;
+		animation-duration: 1s;
+		animation-delay: 1s;
+		animation-timing-function: ease-out;
+		animation-fill-mode: backwards;
+	}
+	@keyframes moveInLeft{
+		0%{ opacity: 0;
+			transform: translateX(-100px);}
+		80%{transform: translateX(10px);}
+		100%{opacity: 1;
+				transform: translate(0);}
+	}
 	/*div .triangle-display {*/
 		/*margin-left: 0px;*/
 	/*}*/
