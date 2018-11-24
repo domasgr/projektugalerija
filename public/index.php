@@ -135,10 +135,17 @@ $res = mysqli_query($db, $sql);
                 <?php endwhile; ?>
             </div>
 			</div>	
-        </div>
+
 
 </main>
 
+
+
+<div class="footer">
+    <div class="footer-icon"><img class="nav-icon" src="../images/icon.png"></div>
+    <div class="copyright">© 2018 Visos teisės saugomos</div>
+    <div class="credits">Designed and created by <i class="fab fa-linkedin"></i><a href="https://github.com/domasgr"><i class="fab fa-github"></i></a></div>
+</div>
 <?php include "../partials/footer.php" ?>
 
 
