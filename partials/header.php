@@ -17,7 +17,7 @@ session_start()
 </head>
 <body>
 <nav id="navigation" class="navbar navbar-expand-sm navbar-dark fixed-top py-0">
-    <a class="navbar-brand" href="#"><img class="nav-icon" src="../images/icon.png">   Projektų galerija</a>
+    <a class="navbar-brand" href="#"><img class="nav-icon" srcset="../images/icon-1x.png 1x, ../images/icon-2x.png 2x">   Projektų galerija</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks">
         <span class="navbar-toggler-icon"></span>
     </button>
