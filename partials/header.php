@@ -13,7 +13,8 @@ session_start()
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
 <!--    https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js-->
-    <link rel="stylesheet" type="text/css" href="./stylesheets/gallery.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./stylesheets/gallery.css"> -->
+    <link rel="stylesheet" type="text/css" href="../sass/style.css">
 </head>
 <body>
 <nav id="navigation" class="navbar navbar-expand-sm navbar-dark fixed-top py-0">

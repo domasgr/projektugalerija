@@ -1,0 +1,20 @@
+.social-network-bar{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 300px;
+    width: 90px;
+    
+    background-image: url(../images/wood-texture-2x.jpg);
+    background-size: cover;
+
+    & .social-media{
+        margin-top: 0;
+        margin-bottom: 0px;
+        padding-left: 19px;
+        color: black;
+        & a{
+            color: black;
+        }
+    }
+}

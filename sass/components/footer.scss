@@ -1,0 +1,75 @@
+.footer{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 64px;
+	width: 600px;
+	background:#6b4e2a;
+	padding-top: 7px;
+    padding-left: 8px;
+    font-size: 11px;
+    overflow: hidden;
+    color: #bbbbbb;
+
+    -webkit-box-shadow: -3px -1px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px -1px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: -3px -1px 23px 0px rgba(0,0,0,0.75);
+
+    & .nav-icon{
+        display: block;
+        width: 40px;
+        margin-left: 30px;
+        margin-top: 12px;
+    }
+    & .footer-icon{
+        display: inline-block;
+        width: 30px;
+    }
+    & .copyright{
+        display: inline-block;
+        width: 35%;
+        font-size: 12px;
+        color: #dadada;
+    }
+    & .credits{
+        display: inline-block;
+        width: 30%;
+    }
+    & .contacts{
+        position: absolute;
+        top: 16px;
+        left: 251px;
+        font-size: 9px;
+        transition: all .3s;
+
+            &:hover{
+                transform: scale(1.5);
+                top: 7px;
+                & ~ div.animation.credits{
+                    display: none;
+                }
+            }
+            
+        }
+    
+    & .ruler{
+        height: 37px;
+        background: url(../images/ruler.png);
+        background-size: cover;
+        margin-left: -18px;
+    }
+    & .angle{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 69px;
+        width: 90px;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%);
+        background-image: url(../images/wood-texture-2x.jpg);
+        background-size: cover;
+    }
+}
+// .contacts:hover ~ .credits{
+//     display: none;
+// }

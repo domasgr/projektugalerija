@@ -1,0 +1,98 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;	
+}
+body{
+    position: relative;
+	background :#f5f5f5;
+	height:100vh;
+	-webkit-font-smoothing: antialiased;
+	-webkit-backface-visibility:hidden;
+}
+main{
+	padding-top: 50px;
+	height: 100%;
+}
+
+
+
+.info{
+    height: 391px;
+    -webkit-box-shadow: 1px 10px 16px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 10px 16px -9px rgba(0,0,0,0.75);
+	box-shadow: 1px 10px 16px -9px rgba(0,0,0,0.75);
+}
+.preview{
+	height: 20%;
+	overflow: hidden;
+	filter: grayscale(70%);
+}
+.project-text{
+	padding: 15px;
+	text-align: justify;
+	white-space: pre-line;
+	white-space: pre-wrap;
+}
+.image-title{
+	padding-top: 15px;
+	text-align: center;
+}
+li.list-group-item{
+	text-align: center;
+	background :#b69064;
+}
+.dropdown{
+	padding-left: 20px;
+}
+.addform{
+    margin-top: 0px;
+    height: 200px;
+	margin-top: 5px;
+}
+.container.login{
+	margin-top: 180px;
+}
+.homelink{
+	display: none;
+}
+div.row.preview:hover{
+	filter: grayscale(0%);
+}
+
+
+
+
+.container{
+	height: 100%;
+	/*overflow: auto;*/
+}
+.row.wrapper{
+	height: 100%;
+}
+.col-lg-9{
+	overflow: auto;
+}
+
+.homelink p{
+	color: white;
+}
+
+.col-md-3.newform{
+	margin-top: 130px;
+}
+.form-control-file, .form-control-range{
+	display: inline-block;
+	width: 200px;
+
+}
+.form-control{
+	margin-top: 10px;
+}
+
+
+.container.admin{
+	margin-top: 10px;
+}
+
+

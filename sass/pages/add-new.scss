@@ -1,0 +1,52 @@
+.numeration{
+	display: inline-block;
+	width: 19px;
+	margin-left: 10px;
+	margin-right: 2px;
+	height: 19px;
+	background: #28a745;
+	color: white;
+	text-align: center;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 0px solid #000000;
+}
+.numerationL{
+	display: inline-block;
+	position: absolute;
+	top: 45px;
+	left: 60px;
+	width: 30px;
+	padding-top: 4px;
+	height: 30px;
+	background: #28a745;
+	color: white;
+	text-align: center;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 0px solid #000000;
+	font-size: 22px;
+}
+.numerationR{
+	display: inline-block;
+	position: absolute;
+	top: 35px;
+	right: 65px;
+	width: 30px;
+	height: 30px;
+	padding-top: 4px;
+	background: #28a745;
+	color: white;
+	text-align: center;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 0px solid #000000;
+	font-size: 22px;
+}
+.addform div.row.preview{
+	height: 30%;
+	background: #6b4e2a8c;
+}

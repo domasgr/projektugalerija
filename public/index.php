@@ -115,11 +115,11 @@ $res = mysqli_query($db, $sql);
 
                             <div onclick="" class="card-body">
                                 <div class="hyperlink">
-                                    <h2 class=""><i class="material-icons md-36">
+                                    <div class="arrow-up"><i class="material-icons md-36">
                                             keyboard_arrow_up
-                                        </i></h2>
+                                        </i></div>
                                     <div class="extra-info">
-                                        <a href="/public/project.php?id=<?php echo $row['id']?>" class="btn btn-primary card-button">Daugiau</a>
+                                        <a href="/public/project.php?id=<?php echo $row['id']?>" class="button-primary card-button">Daugiau</a>
                                         <h5 class="card-title"><?php echo $row['title']?></h5>
                                         <p class="card-text text-truncate"><?php echo $row['text']?></p>
                                     </div>
@@ -135,16 +135,27 @@ $res = mysqli_query($db, $sql);
                 <?php endwhile; ?>
             </div>
 			</div>	
-
+            <div class="social-network-bar">
+                <h1 class="social-media"><a href="/public/sendmailform.php"><i class="far fa-envelope"></i></a></h1>
+                <h1 class="social-media"><a href="#"><i class="fab fa-facebook"></i></a></h1>
+                <h1 class="social-media"><a href="#"><i class="fab fa-instagram"></i></a></h1>
+            </div>
 
 </main>
 
 
 
 <div class="footer">
-    <div class="footer-icon"><img class="nav-icon" src="../images/icon.png"></div>
+    <!-- <div class="footer-icon"><img class="nav-icon" src="../images/icon-1x.png"></div> -->
     <div class="copyright">© 2018 Visos teisės saugomos</div>
-    <div class="credits">Designed and created by <i class="fab fa-linkedin"></i><a href="https://github.com/domasgr"><i class="fab fa-github"></i></a></div>
+    
+    <div class="contacts order-sm-2">dominykas.grubys@gmail.com 
+        <i class="fab fa-linkedin"></i>
+        <a href="https://github.com/domasgr"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="animation credits order-sm-1">Designed and created by</div> 
+    <div class="ruler"></div>
+    <div class="angle"><img class="nav-icon" src="../images/icon-1x.png"></div>
 </div>
 <?php include "../partials/footer.php" ?>
 

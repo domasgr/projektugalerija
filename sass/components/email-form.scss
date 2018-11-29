@@ -1,0 +1,36 @@
+.email-form{
+	display: block;
+	width: 40%;
+	/*margin-top: 100px;*/
+	text-align: center;
+	background: #6b4e2a;
+	color: white;
+
+	border-radius: 0px 0px 46px 46px;
+	-moz-border-radius: 0px 0px 46px 46px;
+	-webkit-border-radius: 0px 0px 46px 46px;
+	border: 0px solid #000000;
+
+	animation-name: popdown;
+	animation-duration: 1s;
+
+    & .btn-primary{
+        background: white;
+        color: #6b4e2a;
+    }
+    & .place-holder{
+        height: 100px;
+    }
+    & .form-group{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@keyframes popdown{
+	0%{transform: translateY(-500px);}
+	20%{transform: translateY(-450px);}
+	30%{transform: translateY(-540px);}
+	100%{transform: translateY(0);}
+
+}
