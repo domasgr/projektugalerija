@@ -136,30 +136,41 @@ $row = mysqli_fetch_assoc($res);
 
                 <div class="col-lg-3 order-1 order-lg-1">
                     <div class="row">
-                        <div class="col-12 info">
-                                <div class="row preview mb-1">
-                                    <div class="col" id="img" style="background-image: url(../uploads/<?php echo $row['image1']?>); background-size: cover; background-position: center center;">
-                                    </div>
-                                </div>
-                                <div class="row preview mb-1">
-                                    <div class="col" style="background-image: url(../uploads/<?php echo $row['image2']?>); background-size: cover; background-position: center center;">
-                                    </div>
-                                </div>
-                                <div class="row preview mb-1">
-                                    <div class="col"  style="background-image: url(../uploads/<?php echo $row['image3']?>); background-size: cover; background-position: center center;">
-                                    </div>
-                                </div>
-                                <div class="row preview mb-1">
-                                    <div class="col"  style="background-image: url(../uploads/<?php echo $row['image4']?>); background-size: cover; background-position: center center;">
-                                    </div>
-                                </div>
-                                <div class="row preview">
-                                    <div class="col"  style="background-image: url(../uploads/<?php echo $row['image5']?>); background-size: cover; background-position: center center;">
-                                    </div>
-                                </div>
-                            <small class="form-text text-muted mb-3">Spauskite ant nuotraukos, norėdami peržiūrėti</small>
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="title-photo">
+                                <div>Nuotraukos</div>
+                                <small>Spauskite ant nuotraukos norėdami peržiūrėti</small>
+                                <i class="fas fa-caret-down"></i> 
+                            </div> 
+                                          
+                        </div>
+                    </div>
 
-
+                    <div class="row flex-column">
+                    <div class="photos">
+                            <div class="col-12 info d-flex flex-column justify-content-center">
+                                    <div class="row preview mb-1">
+                                        <div class="col" id="img" style="background-image: url(../uploads/<?php echo $row['image1']?>); background-size: cover; background-position: center center;">
+                                        </div>
+                                    </div>
+                                    <div class="row preview mb-1">
+                                        <div class="col" style="background-image: url(../uploads/<?php echo $row['image2']?>); background-size: cover; background-position: center center;">
+                                        </div>
+                                    </div>
+                                    <div class="row preview mb-1">
+                                        <div class="col"  style="background-image: url(../uploads/<?php echo $row['image3']?>); background-size: cover; background-position: center center;">
+                                        </div>
+                                    </div>
+                                    <div class="row preview mb-1">
+                                        <div class="col"  style="background-image: url(../uploads/<?php echo $row['image4']?>); background-size: cover; background-position: center center;">
+                                        </div>
+                                    </div>
+                                    <div class="row preview">
+                                        <div class="col"  style="background-image: url(../uploads/<?php echo $row['image5']?>); background-size: cover; background-position: center center;">
+                                        </div>
+                                    </div>
+                                    
+                            </div>
                         </div>
                     </div>
 
@@ -198,7 +209,17 @@ $row = mysqli_fetch_assoc($res);
             </div>
 
 
-                <div class="col-lg-9 order-lg-2">
+                <div class="col-lg-9 d-flex flex-column order-lg-2">
+
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="title">
+                                <div class="icon-box"><img src="../images/icon-2x.png" class="title-icon"></div>
+                                <div class="title-box"><?php echo $row['title'] ?></div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row mobile-triangle">
                         <div class="col-12">
                             <div class="triangle-display">
@@ -210,10 +231,11 @@ $row = mysqli_fetch_assoc($res);
 
 
                     <div class="row">
-                        <div class="col-12">
-                            <h3 class="image-title"><?php echo $row['title'] ?></h3>
-<!--                            <p><em>By Adiela Bameler</em></p>-->
-                            <p class="project-text"><?php echo $row['text'] ?> </p>
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="information">
+                                <!-- <h3 class="image-title"><?php echo $row['title'] ?></h3> -->
+                                <p class="project-text"><?php echo $row['text'] ?> </p>
+                            </div>                          
                         </div>
                     </div>
 

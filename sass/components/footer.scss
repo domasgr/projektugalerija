@@ -10,11 +10,18 @@
     font-size: 11px;
     overflow: hidden;
     color: #bbbbbb;
+    transform-origin: 95% 50%;
+    animation: flip .5s 1s ease-in-out;
+    animation-fill-mode:  backwards;
 
     -webkit-box-shadow: -3px -1px 23px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -3px -1px 23px 0px rgba(0,0,0,0.75);
     box-shadow: -3px -1px 23px 0px rgba(0,0,0,0.75);
 
+@keyframes flip{
+    0%{transform: rotateZ(90deg);}
+    100%{transform: rotateZ(0deg);}
+}
     & .nav-icon{
         display: block;
         width: 40px;

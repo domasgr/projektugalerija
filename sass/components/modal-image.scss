@@ -57,11 +57,3 @@
 	from {transform:scale(0)}
 	to {transform:scale(1)}
 }
-@media only screen and (max-width: 700px){
-	.modal-content {
-		width: 100%;
-	}
-	div.row.mobile-triangle{
-		background: #6b4e2a;
-	}
-}
