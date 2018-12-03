@@ -826,7 +826,8 @@ small {
   .footer {
     height: 120px;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    animation: 0; }
     .footer .copyright {
       display: block;
       width: 100%;
