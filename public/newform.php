@@ -67,8 +67,25 @@
                         <div class="numeration">4</div><i class="far fa-image text-success"></i>
                         <input type="file" name="images[]" class="form-control-file mb-3">
                         <div class="numeration">5</div><i class="far fa-image text-success"></i>
+
+
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="type" value="m" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Medžio projektas
+                        </label>
+                        </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="type" value="s">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Siuvinėjimo projektas
+                        </label>
+                        </div>
+
+
+
                         <input type="text" name="date" class="form-control" placeholder="Date">
-                        <input type="text" name="type" class="form-control" placeholder="Work type">
+                        <!-- <input type="text" name="type" class="form-control" placeholder="Work type"> -->
                         <input type="text" name="timespent" class="form-control" placeholder="Time spent">
 
 <!--                        <input type="text" class="form-control" placeholder="Additional info">-->
