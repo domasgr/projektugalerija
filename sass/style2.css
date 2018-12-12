@@ -1,0 +1,46 @@
+#navigation{
+    background: #f7797d;
+}
+.projects-select{
+    border: 4px solid #f7797d;
+    box-sizing: content-box;
+}
+.projects-select .slider{
+    transform: translateX(-25%);
+}
+.projects-select .slider:hover{
+    transform: translateX(28%);
+}
+.projects-select .slider:hover .wood{
+    background-image: linear-gradient(to right bottom, #00000000, #00000000), url(../images/medis.jpg);
+}
+.projects-select .slider .textile{
+    background-image: linear-gradient(to right bottom, #00000000, #00000000), url(../images/textile.jpg);
+}
+.projects-select .slider .wood{
+    background-image: linear-gradient(to right bottom, #0000006c, #0000006c), url(../images/medis.jpg);
+}
+.projects-select .textile:hover{
+    transform: translateX(0);
+}
+.triangle-display .triangleL {
+    clip-path: none;
+}
+.triangle-display .triangleR {
+    display: none;
+}
+.projects-select .slider .textile p {
+    background: #0000008f;
+} 
+
+
+.footer{
+    background: #f7797d;
+}
+
+@media (min-width: 1024px){
+    div.backToHome {
+        /* background-image: linear-gradient(to right bottom, #f7797d5e, #f7797d3a), url(../../images/header.jpg); */
+        opacity: 1;
+    }
+}

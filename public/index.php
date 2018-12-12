@@ -87,12 +87,16 @@ if(isset($_REQUEST['action']) &&  $_REQUEST['action'] == "DELETE" && isset($_SES
 
 
 
+if(isset($_REQUEST['filter']) && $_REQUEST['filter'] == "textile"){
+    $sql = "SELECT * FROM projectf WHERE projectType = 's';";
+    $res = mysqli_query($db, $sql);
+} else {
+    $sql = "SELECT * FROM projectf WHERE projectType = 'm';";
+    $res = mysqli_query($db, $sql);
+}
 
 
 
-
-$sql = "SELECT * FROM projectf;";
-$res = mysqli_query($db, $sql);
 
 
 ?>
@@ -106,6 +110,14 @@ $res = mysqli_query($db, $sql);
                 </div>
             </div></a>
 		<div class="container gallery-page">
+            
+            <div class="projects-select">
+                <div class="slider">
+                <a href="/public/index.php"><div class="wood">Medis</div></a>
+                <a href="/public/index.php?filter=textile"><div class="textile"><p>Tekstilė</p></div></a>
+                </div>
+            </div>
+
 			<div class="row">
                 <?php while($row = mysqli_fetch_assoc($res)): ?>
 				<div class="col-xl-3 col-lg-4 col-sm-6">
@@ -119,7 +131,7 @@ $res = mysqli_query($db, $sql);
                                             keyboard_arrow_up
                                         </i></div>
                                     <div class="extra-info">
-                                        <a href="/public/project.php?id=<?php echo $row['id']?>" class="button-primary card-button">Daugiau</a>
+                                        <a href="/public/project.php?id=<?php echo $row['id']?>&<?php if(isset($_REQUEST['filter']) && $_REQUEST['filter'] == "textile"){echo 'filter=textile';}?>" class="button-primary card-button">Daugiau</a>
                                         <h5 class="card-title"><?php echo $row['title']?></h5>
                                         <p class="card-text text-truncate"><?php echo $row['text']?></p>
                                     </div>
@@ -155,7 +167,9 @@ $res = mysqli_query($db, $sql);
     </div>
     <div class="animation credits order-sm-1">Designed and created by</div> 
     <div class="ruler"></div>
-    <div class="angle"><img class="nav-icon" src="../images/icon-1x.png"></div>
+    <?php if(isset($_REQUEST['filter']) && $_REQUEST['filter'] == "textile"){
+     echo '<div class="angle"><img class="nav-icon" src="../images/textile-icon-1x.png"></div>';}
+     else{ echo '<div class="angle"><img class="nav-icon" src="../images/icon-1x.png"></div>';}?>
 </div>
 <?php include "../partials/footer.php" ?>
 

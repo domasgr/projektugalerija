@@ -109,7 +109,11 @@ $row = mysqli_fetch_assoc($res);
 
 
     <main>
-        <a href="/public/index.php"><div class="backToGallery">
+        <?php if(isset($_REQUEST['filter']) && $_REQUEST['filter'] == "textile"){
+            echo '<a href="/public/index.php?filter=textile"><div class="backToGallery">'; }
+            else{
+                echo '<a href="/public/index.php"><div class="backToGallery">';
+            }?>
                 <div class="homelink gallery">
                     <h1><i class="fas fa-arrow-left"></i></h1>
                 </div>
@@ -214,7 +218,9 @@ $row = mysqli_fetch_assoc($res);
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">
                             <div class="title">
-                                <div class="icon-box"><img src="../images/icon-2x.png" class="title-icon"></div>
+                            <?php if(isset($_REQUEST['filter']) && $_REQUEST['filter'] == "textile"){
+                                echo '<div class="icon-box"><img src="../images/textile-icon-2x.png" class="title-icon"></div>';}
+                                else{echo '<div class="icon-box"><img src="../images/icon-2x.png" class="title-icon"></div>';} ?>
                                 <div class="title-box"><?php echo $row['title'] ?></div>
                             </div>
                         </div>

@@ -116,3 +116,109 @@ div.row.preview:hover{
 }
 
 
+
+
+
+.projects-select{
+	height: 40px;
+	width: 300px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 0px 0px 20px 20px;
+	color: white;
+	position: relative;
+	overflow: hidden;
+	border: 4px solid #6b4e2a;
+    box-sizing: content-box;
+
+	& a:link,
+	& a:visited
+	& a:active,
+	& a{
+		color: white;
+		text-decoration: none;
+	}
+
+	& .slider{
+		position: relative;
+		height: 100%;
+		transform: translateX(25%);
+		transition: all .3s ease-in-out;
+		&:hover{
+			transform: translateX(-25%);
+		}
+		&:hover .textile{
+			background-image: linear-gradient(to right bottom, #00000000, #00000000), url(../images/textile.jpg);
+		}
+		&:hover p{
+			background: #0000008f;
+		}
+
+		
+	& .wood{
+		position: absolute;
+		top: 0;
+		left: -30%;
+		-webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+		width: 85%;
+		height: 100%;
+		background: url(../images/medis.jpg);
+		background-size: cover;
+		display: flex;
+    	justify-content: flex-end;
+		align-items: center;
+		padding-right: 32px;
+		transition: all .2s;
+		font-weight: 600;		
+		// &:hover{
+		// 	transform: translateX(20%);
+		// 	z-index: 2;
+		// }
+		// &:hover ~ div.projects-select .textile{
+		// 	display: none;
+		// }
+	}
+
+	& .textile{
+		position: absolute;
+		top: 0;
+		right: -30%;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+		width: 85%;
+		height: 100%;
+		// font-weight: 600;
+    	// font-size: 16px;
+		background-image: linear-gradient(to right bottom, #0000006c, #0000006c), url(../images/textile.jpg);
+		// linear-gradient(to right bottom, #ee9ca7a9, #ffdde1a9),
+		background-position: center center;
+		display: flex;
+		justify-content: start;
+		
+		align-items: center;
+		transition: all .3s ease-in-out;
+		z-index: 1;
+		
+		// &:hover{
+		// 	transform: translateX(-55%);
+		// 	background-image: linear-gradient(to right bottom, #00000000, #00000000), url(../images/textile.jpg);
+			
+		//}
+		// &:hover p{ 
+		// 	background: #0000008f;
+		//}
+		& p{
+			margin: 0;
+			font-weight: 600;
+			padding-left: 25px;
+			height: 100%;
+			padding-top: 7px;
+			padding-right: 5px;
+		}
+		
+	}
+}
+	
+
+}

@@ -93,6 +93,73 @@ div.row.preview:hover {
 .container.admin {
   margin-top: 10px; }
 
+.projects-select {
+  height: 40px;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 0px 0px 20px 20px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  border: 4px solid #6b4e2a;
+  box-sizing: content-box; }
+  .projects-select a:link,
+  .projects-select a:visited
+.projects-select a:active,
+  .projects-select a {
+    color: white;
+    text-decoration: none; }
+  .projects-select .slider {
+    position: relative;
+    height: 100%;
+    transform: translateX(25%);
+    transition: all .3s ease-in-out; }
+    .projects-select .slider:hover {
+      transform: translateX(-25%); }
+    .projects-select .slider:hover .textile {
+      background-image: linear-gradient(to right bottom, #00000000, #00000000), url(../images/textile.jpg); }
+    .projects-select .slider:hover p {
+      background: #0000008f; }
+    .projects-select .slider .wood {
+      position: absolute;
+      top: 0;
+      left: -30%;
+      -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+      width: 85%;
+      height: 100%;
+      background: url(../images/medis.jpg);
+      background-size: cover;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 32px;
+      transition: all .2s;
+      font-weight: 600; }
+    .projects-select .slider .textile {
+      position: absolute;
+      top: 0;
+      right: -30%;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+      width: 85%;
+      height: 100%;
+      background-image: linear-gradient(to right bottom, #0000006c, #0000006c), url(../images/textile.jpg);
+      background-position: center center;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      transition: all .3s ease-in-out;
+      z-index: 1; }
+      .projects-select .slider .textile p {
+        margin: 0;
+        font-weight: 600;
+        padding-left: 25px;
+        height: 100%;
+        padding-top: 7px;
+        padding-right: 5px; }
+
 body {
   font-family: 'Montserrat', sans-serif; }
 
@@ -116,7 +183,7 @@ body {
   width: 250px;
   height: 250px;
   border: none;
-  margin: 20px auto;
+  margin: 7px auto;
   animation: scaleup .5s .3s ease-in-out;
   animation-fill-mode: backwards; }
 
@@ -839,4 +906,6 @@ small {
       top: 65px; }
     .footer .ruler {
       position: relative;
-      top: 21px; } }
+      top: 21px; }
+  .projects-select {
+    width: 280px; } }
