@@ -48,11 +48,15 @@ main{
 }
 .project-text{
 	padding: 43px;
-	padding-bottom: 0;
+	padding-bottom: 10px;
 	text-align: justify;
 	white-space: pre-line;
 	white-space: pre-wrap;
 	font-weight: 800;
+	background: white;
+	border-radius: 30px 30px 0px 0px;
+	margin-bottom: 0;
+
 }
 .image-title{
 	padding-top: 15px;
