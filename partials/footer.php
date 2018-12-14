@@ -58,15 +58,25 @@
     }
 
     arrowLeft.onclick = function(){
-        //console.log('now photo is :'+photo)
-        var nextPhoto = photo - 1;
-        //console.log('next photo : '+nextPhoto);
-       img[nextPhoto].onclick();
+        if(photo > 0){
+            //console.log('now photo is :'+photo)
+            var nextPhoto = photo - 1;
+            //console.log('next photo : '+nextPhoto);
+            img[nextPhoto].onclick();
+        } else{
+            var nextPhoto = 4;
+            img[nextPhoto].onclick();
+        }
     }
     arrowRight.onclick = function(){
-        var nextPhoto = photo + 1;
-        console.log(nextPhoto);
-        img[nextPhoto].onclick();
+        if(photo < 4){
+            var nextPhoto = photo + 1;
+            console.log(nextPhoto);
+            img[nextPhoto].onclick();
+        } else {
+            var nextPhoto = 0;
+            img[nextPhoto].onclick();
+        }
     }
     
     var span = document.getElementsByClassName("closem")[0];
