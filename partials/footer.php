@@ -20,33 +20,55 @@
     //
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
+    var arrowLeft = document.querySelector(".left");
+    var arrowRight = document.querySelector(".right");
+
+    var photo;
+
+
     img[0].onclick = function(){
         modal.style.display = "block";
         modalImg.src = '../uploads/<?php echo $row['image1']?>';
-        captionText.innerHTML = this.alt;
+        // captionText.innerHTML = this.alt;
+        photo = 0;
     }
     img[1].onclick = function(){
         modal.style.display = "block";
         modalImg.src = '../uploads/<?php echo $row['image2']?>';
-        captionText.innerHTML = this.alt;
+        //captionText.innerHTML = this.alt;
+        photo = 1;
     }
     img[2].onclick = function(){
         modal.style.display = "block";
         modalImg.src = '../uploads/<?php echo $row['image3']?>';
-        captionText.innerHTML = this.alt;
+        //captionText.innerHTML = this.alt;
+        photo = 2;
     }
     img[3].onclick = function(){
         modal.style.display = "block";
         modalImg.src = '../uploads/<?php echo $row['image4']?>';
-        captionText.innerHTML = this.alt;
+        //captionText.innerHTML = this.alt;
+        photo = 3;
     }
     img[4].onclick = function(){
         modal.style.display = "block";
         modalImg.src = '../uploads/<?php echo $row['image5']?>';
-        captionText.innerHTML = this.alt;
+        //captionText.innerHTML = this.alt;
+        photo = 4;
     }
 
-
+    arrowLeft.onclick = function(){
+        //console.log('now photo is :'+photo)
+        var nextPhoto = photo - 1;
+        //console.log('next photo : '+nextPhoto);
+       img[nextPhoto].onclick();
+    }
+    arrowRight.onclick = function(){
+        var nextPhoto = photo + 1;
+        console.log(nextPhoto);
+        img[nextPhoto].onclick();
+    }
+    
     var span = document.getElementsByClassName("closem")[0];
 
 

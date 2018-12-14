@@ -413,42 +413,69 @@ body {
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9);
   /* Black w/ opacity */ }
-  .modal .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px; }
-  .modal #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px; }
-  .modal .modal-content, .modal #caption {
-    animation-name: zoom;
-    animation-duration: 0.6s; }
-  .modal .closem {
-    position: absolute;
-    top: 80px;
-    right: 35px;
-    color: #656565;
-    font-size: 60px;
-    font-weight: bold;
-    transition: 0.3s;
-    -webkit-transition: 0.3s; }
-    .modal .closem:hover, .modal .closem:focus {
-      color: white;
-      text-decoration: none;
-      cursor: pointer; }
+  .modal .modal-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%; }
+    .modal .modal-flex .left {
+      width: 10%;
+      height: 100%;
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .modal .modal-flex .left:hover .arrow-icon {
+        color: #845c66;
+        cursor: pointer; }
+    .modal .modal-flex .modal-content {
+      display: block;
+      width: 80%;
+      max-width: 700px; }
+    .modal .modal-flex .right {
+      width: 10%;
+      height: 100%;
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .modal .modal-flex .right:hover .arrow-icon {
+        color: #845c66;
+        cursor: pointer; }
+    .modal .modal-flex .arrow-icon {
+      font-size: 120px;
+      color: #845c6687; }
+    .modal .modal-flex #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px; }
+    .modal .modal-flex .modal-content, .modal .modal-flex #caption {
+      animation-name: zoom;
+      animation-duration: 0.6s; }
 
 @keyframes zoom {
   from {
     transform: scale(0); }
   to {
     transform: scale(1); } }
+  .modal .closem {
+    position: absolute;
+    top: 80px;
+    right: 35px;
+    color: #845c6687;
+    font-size: 60px;
+    font-weight: bold;
+    transition: 0.3s;
+    -webkit-transition: 0.3s; }
+    .modal .closem:hover, .modal .closem:focus {
+      color: #845c66;
+      text-decoration: none;
+      cursor: pointer; }
 
 .email-form {
   display: block;
@@ -911,4 +938,6 @@ small {
       position: relative;
       top: 21px; }
   .projects-select {
-    width: 280px; } }
+    width: 280px; }
+  .modal .modal-flex .arrow-icon {
+    font-size: 50px; } }

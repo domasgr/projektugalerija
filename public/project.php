@@ -124,12 +124,14 @@ $row = mysqli_fetch_assoc($res);
 
             <!-- The Close Button -->
             <span class="closem">&times;</span>
-
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img01">
-
+                <div class="modal-flex">
+                    <div class="left"><i class="fas fa-chevron-left arrow-icon"></i></div>
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+                    <div class="right"><i class="fas fa-chevron-right arrow-icon"></i></div>
+                </div>                  
             <!-- Modal Caption (Image Text) -->
-            <div id="caption"></div>
+            <!-- <div id="caption">Projekto nuotraukos</div> -->
         </div>
 
 
