@@ -424,7 +424,8 @@ body {
       background: transparent;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      animation: slideLeft .6s ease-in-out backwards; }
       .modal .modal-flex .left:hover .arrow-icon {
         color: #845c66;
         cursor: pointer; }
@@ -438,7 +439,8 @@ body {
       background: transparent;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      animation: slideRight .6s ease-in-out backwards; }
       .modal .modal-flex .right:hover .arrow-icon {
         color: #845c66;
         cursor: pointer; }
@@ -476,6 +478,28 @@ body {
       color: #845c66;
       text-decoration: none;
       cursor: pointer; }
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(110px); }
+  30% {
+    opacity: 0; }
+  31% {
+    opacity: 1; }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-110px); }
+  30% {
+    opacity: 0; }
+  31% {
+    opacity: 1; }
+  100% {
+    transform: translateX(0); } }
 
 .email-form {
   display: block;

@@ -23,8 +23,16 @@
     var arrowLeft = document.querySelector(".left");
     var arrowRight = document.querySelector(".right");
 
+    
+
     var photo;
 
+    function goto(event){
+        var noRedirect = '.left, .left *, .modal-content, .right, .right *'
+        if(!event.target.matches(noRedirect)){
+            modal.style.display = "none"; 
+        }
+    }
 
     img[0].onclick = function(){
         modal.style.display = "block";
@@ -79,7 +87,11 @@
         }
     }
     
+    modal.addEventListener('click', goto);
+
+
     var span = document.getElementsByClassName("closem")[0];
+
 
 
     span.onclick = function() {
